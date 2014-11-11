@@ -1,0 +1,10 @@
+<h3>Profile of <%= @user['first_name'] %></h3>
+
+<pre>
+  ID        :   <%= @user['id'] %>
+  Name      :   <%= @user['first_name'] + ' ' + @user['last_name'] %>
+  Phone     :   <%= @user['phone'] %>
+  Details   :   <%= @user['details'] %>
+</pre>
+<br>
+<a href='/users'> All Users </a>

@@ -1,0 +1,14 @@
+<h4>List of all Users</h4>
+<br>
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <pre>
+      ID        :   <%= user['id'] %>
+      Name      :   <%= user['first_name'] + ' ' + user['last_name'] %>
+      Phone     :   <%= user['phone'] %>
+      Details   :   <%= user['details'] %>
+      </pre>
+    </li>
+  <% end %>
+</ul>
